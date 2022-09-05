@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Atlas UI Tools",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://cloud.mongodb.com/v2/*"
+      ],
+      "run_at": "document_end",
+      "js": [
+        "js/worker.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "assets/logo.png",
+      "32": "assets/logo.png",
+      "48": "assets/logo.png"
+    }
+  },
+  "permissions": [
+    "storage"
+  ]
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="cdn/tailwindcss.js"></script>
+    <script src="tailwind.config.cjs"></script>
+    <script type="module" src="./js/popup.js"></script>
+</head>
+
+<body
+    class="h-96 w-96 bg-gradient-to-b from-[#040c36] to-black border-2 border-red-600 flex flex-col justify-center items-center font-mono">
+    <div class="w-full flex flex-col justify-center items-center bg-red-700 p-5">
+        <p class="text-3xl text-center text-white font-semibold">Atlas UI Tools</p>
+    </div>
+    <p id="version" class="text-lg text-white text-center my-4">{version}</p>
+    <div class="w-1/2 h-0.5 bg-red-700"></div>
+    <div class="h-full w-10/12 flex flex-col justify-center items-center mb-4">
+        <p id="lbl-spaced-mode" class="text-lg text-center mt-4 mb-5">Spaced Mode</p>
+        <div class="relative flex justify-center items-center">
+            <button type="button" id="btn-spaced-mode"
+                class="text-white bg-red-700 hover:bg-red-800 z-30 focus:ring-4 focus:outline-none focus:red-green-300 font-medium rounded-full text-sm p-4 text-center inline-flex items-center mr-2 dark:bg-red-700 dark:hover:bg-red-600 dark:focus:ring-red-800">
+                <svg id="spaced-mode-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-14 h-14">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                </svg>
+                <span class="sr-only">Icon description</span>
+            </button>              
+            <div class="absolute top-[0.8rem] left-[0.8rem] animate-ping rounded-full bg-red-800 w-[4rem] h-[4rem] z-0"></div>
+        </div>
+    </div>
+</body>
+
+</html>
