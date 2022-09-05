@@ -10,7 +10,8 @@
       "run_at": "document_end",
       "js": [
         "js/worker.js"
-      ]
+      ],
+      "persistent": false
     }
   ],
   "action": {
